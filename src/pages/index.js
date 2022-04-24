@@ -20,11 +20,10 @@ const Index = () => {
       <StyledMain>
         <Hero title="Web, SEO, Email Marketing | Park City, UT" />
         
-        <About title="About">
+        <About title="WE MOVE MOUNTAINS">
           <p>
-            Custom website design/development, technical and on-page search
-            engine optimization, Shopify e-commerce and email marketing for small &mdash;
-            medium businesses.
+            Actually, we can't &mdash; but we can do custom website design/development, technical and on-page search
+            engine optimization, Shopify e-commerce and email marketing for small/medium businesses.
           </p>
         </About>
 
@@ -54,7 +53,7 @@ export default Index
 
 //Styles
 const StyledHeader = styled.header`
-  min-height: 80px;
+  min-height: 100px;
   display:flex;
   align-items:center;
   position:relative;

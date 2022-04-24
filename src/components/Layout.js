@@ -18,7 +18,10 @@ const GlobalStyle = createGlobalStyle`
 
   h2::before, h2::after {
     content: " — ";
-    color:#d3e4c7;
+    #about {
+      color:#d3e4c7;
+    }
+    
   }
   h2#about {
     color:#d3e4c7;

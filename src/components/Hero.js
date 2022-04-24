@@ -22,7 +22,7 @@ const HeroBox = styled.div`
   background-size:cover;
   background-position:center;
   position:relative;
-  margin-top:-80px;
+  margin-top:-100px;
   display:flex;
   justify-content:center;
   align-items:center;
