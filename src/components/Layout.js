@@ -16,6 +16,14 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
   }
 
+  h2::before, h2::after {
+    content: " — ";
+    color:#d3e4c7;
+  }
+  h2#about {
+    color:#d3e4c7;
+  }
+
 
 `;
 

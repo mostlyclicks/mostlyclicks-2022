@@ -6,9 +6,11 @@ const Hero = (props) => {
    
   return (
     <HeroBox>
-      <h1>{props.title}</h1>
+      <div>
+        <h1>{props.title}</h1>
+      </div>
     </HeroBox>
-  )
+  );
 }
 
 export default Hero
@@ -18,6 +20,7 @@ const HeroBox = styled.div`
   background-color:lightblue;
   background-image:url(${BgImage});
   background-size:cover;
+  background-position:center;
   position:relative;
   margin-top:-80px;
   display:flex;
@@ -26,5 +29,13 @@ const HeroBox = styled.div`
   h1 {
     color:white;
     text-shadow:0 0 40px rgba(0,0,0,.5);
+    text-align:center;
   }
+  div {
+    @media (min-width: 768px) {
+      h1 {font-size:255%;}
+    }
+  }
+
+
 `
