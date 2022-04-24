@@ -6,6 +6,8 @@ import About from '../components/About'
 import Services from '../components/Services'
 import Team from '../components/Team'
 import Contact from '../components/Contact'
+import Logo from '../images/mostlyClicks-logo-white.png'
+
 
 
 
@@ -13,11 +15,11 @@ const Index = () => {
   return (
     <Layout>
       <StyledHeader>
-        <h2>mostlyClicks, Inc</h2>
+        <brand><img src={Logo} alt="mostlyClicks, llc Logo" /></brand>
       </StyledHeader>
       <StyledMain>
         <Hero title="Web, SEO, Email Marketing | Park City, UT" />
-
+        
         <About title="About">
           <p>
             Custom website design/development, technical and on-page search
@@ -43,6 +45,7 @@ const Index = () => {
       <StyledFooter>
         <p>This is the footer</p>
       </StyledFooter>
+      
     </Layout>
   );
 }
@@ -51,8 +54,16 @@ export default Index
 
 //Styles
 const StyledHeader = styled.header`
-  min-height: 60px;
-  background-color:rgba(0,0,0,.33);
+  min-height: 80px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  z-index:10;
+  img {
+    height:55px;
+    
+  }
+  
 `;
 
 const StyledMain = styled.main`
